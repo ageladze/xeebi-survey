@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Poppins font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <body>
+    <h1 id="title" class="text-center">Survey Form for Republic of XEEBI</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the community</p>
+    <form method="GET" action="mailto:anrigeladze9@gmail.com" enctype="text/plain" id="survey-form">
+        <div class="form-group">
+            <!-- Name -->
+            <label id="name-label" for="name">Name <input class="form-input" id="name" type="text" placeholder="Enter your Name" required></label>
+        </div>
+        <div class="form-group">
+            <!-- Email -->
+            <label id="email-label" for="email">Email <input class="form-input" id="email" type="email" placeholder="Enter your Email" required></label>
+        </div>
+        <div class="form-group">
+            <!-- Age -->
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span> <input class="form-input" id="number" type="number" placeholder="Age" min="13" max="120"></label>
+        </div>
+        <div class="form-group">
+            <!-- Choice -->
+            <label for="dropdown">Which Role Describes your current role in XEEBI?
+                <select name="dropdown" id="dropdown" class="form-input">
+                    <option value="">Select your current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-group">
+            <!-- Reccomendation -->
+            <p>Would you suggest XEEBI to your friends?</p>
+            <label for="yes"><input class="radio-input" type="radio" id="yes" name="yes-no-maybe" checked> Yes</label>
+            <label for="no"><input class="radio-input" type="radio" id="no" name="yes-no-maybe"> No</label>
+            <label for="maybe"><input class="radio-input" type="radio" id="maybe" name="yes-no-maybe"> Maybe</label>
+        </div>
+        <div class="form-group">
+            <!-- Checkbox -->
+            <p>What do you like the most in XEEBI? 
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label for="bura"><input class="inline" id="bura" type="checkbox" value="bura"> Bura</label>
+            <label for="joker"><input class="inline" id="joker" type="checkbox" value="joker"> Jokeri</label>
+            <label for="yumari"><input class="inline" id="yumari" type="checkbox" value="yumari"> Yumari</label>
+            <label for="bodiali"><input class="inline" id="bodiali" type="checkbox" value="bodiali"> Bodiali</label>
+            <label for="moweva"><input class="inline" id="moweva" type="checkbox" value="moweva"> Moweva</label>
+            <label for="dayleprochaoba"><input class="inline" id="dayleprochaoba" type="checkbox" value="dayleprochaoba"> Dayleprochaoba</label>
+        </div>
+        <div class="form-group">
+            <!-- Suggestion -->
+            <label for="rcheva">What would you suggest us to improve? <textarea name="rcheva" id="rcheva" cols="30" rows="5"></textarea></label>
+        </div>
+        <div class="form-group">
+             <!-- Submit -->
+            <label for="submit"> <input class="submit" type="submit" id="submit"></label>
+        </div>
+        
+    </form>
+</body>
+</html>
